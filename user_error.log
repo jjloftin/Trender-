@@ -1,0 +1,88 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Sun Apr 5 22:25:03 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   yelpuser.ctl
+Data File:      C:\Users\Tom\Documents\CS327E\Yelp\yelp_dataset_challenge_academic_dataset\yelp_academic_dataset_user_nofriends.csv
+  Bad File:     yelp_academic_dataset_user_nofriends.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table YELP_USER, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+YELPING_SINCE                       FIRST     *   ,  O(") CHARACTER            
+COMPLIMENTS_PLAIN                    NEXT     *   ,  O(") CHARACTER            
+REVIEW_COUNT                         NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_CUTE                     NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_WRITER                   NEXT     *   ,  O(") CHARACTER            
+FANS                                 NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_NOTE                     NEXT     *   ,  O(") CHARACTER            
+TYPE_DESC                            NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_HOT                      NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_COOL                     NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_PROFILE                  NEXT     *   ,  O(") CHARACTER            
+AVERAGE_STARS                        NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_MORE                     NEXT     *   ,  O(") CHARACTER            
+ELITE                                NEXT     *   ,  O(") CHARACTER            
+NAME_DESC                            NEXT     *   ,  O(") CHARACTER            
+USER_ID                              NEXT     *   ,  O(") CHARACTER            
+VOTES_COOL                           NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_LIST                     NEXT     *   ,  O(") CHARACTER            
+VOTES_FUNNY                          NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_PHOTOS                   NEXT     *   ,  O(") CHARACTER            
+COMPLIMENTS_FUNNY                    NEXT     *   ,  O(") CHARACTER            
+VOTES_USEFUL                         NEXT     *   ,  O(") CHARACTER            
+
+value used for ROWS parameter changed from 64 to 45
+Record 1: Rejected - Error on table YELP_USER, column COMPLIMENTS_PLAIN.
+ORA-01722: invalid number
+
+Record 52551: Rejected - Error on table YELP_USER, column USER_ID.
+ORA-01400: cannot insert NULL into ("YELP"."YELP_USER"."USER_ID")
+
+Record 89101: Rejected - Error on table YELP_USER, column USER_ID.
+ORA-01400: cannot insert NULL into ("YELP"."YELP_USER"."USER_ID")
+
+Record 102379: Rejected - Error on table YELP_USER, column USER_ID.
+ORA-01400: cannot insert NULL into ("YELP"."YELP_USER"."USER_ID")
+
+Record 195991: Rejected - Error on table YELP_USER, column USER_ID.
+ORA-01400: cannot insert NULL into ("YELP"."YELP_USER"."USER_ID")
+
+Record 298565: Rejected - Error on table YELP_USER, column USER_ID.
+ORA-01400: cannot insert NULL into ("YELP"."YELP_USER"."USER_ID")
+
+
+Table YELP_USER:
+  366710 Rows successfully loaded.
+  6 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 255420 bytes(45 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        366716
+Total logical records rejected:         6
+Total logical records discarded:        0
+
+Run began on Sun Apr 05 22:25:03 2015
+Run ended on Sun Apr 05 22:25:32 2015
+
+Elapsed time was:     00:00:29.11
+CPU time was:         00:00:03.00

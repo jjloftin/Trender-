@@ -1,0 +1,58 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Sun Apr 5 21:49:37 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   yelp.ctl
+Data File:      C:\Users\Tom\Documents\CS327E\Yelp\yelp_dataset_challenge_academic_dataset\yelp_academic_dataset_review_notext.csv
+  Bad File:     yelp_academic_dataset_review_notext.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table REVIEW, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+USER_ID                             FIRST     *   ,  O(") CHARACTER            
+REVIEW_ID                            NEXT     *   ,  O(") CHARACTER            
+VOTES_COOL                           NEXT     *   ,  O(") CHARACTER            
+BUSINESS_ID                          NEXT     *   ,  O(") CHARACTER            
+VOTES_FUNNY                          NEXT     *   ,  O(") CHARACTER            
+STARS                                NEXT     *   ,  O(") CHARACTER            
+REVIEW_DATE                          NEXT     *   ,  O(") CHARACTER            
+TYPE_DESC                            NEXT     *   ,  O(") CHARACTER            
+VOTES_USEFUL                         NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table REVIEW, column VOTES_COOL.
+ORA-01722: invalid number
+
+
+Table REVIEW:
+  1569264 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 148608 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       1569265
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Sun Apr 05 21:49:37 2015
+Run ended on Sun Apr 05 21:51:17 2015
+
+Elapsed time was:     00:01:39.82
+CPU time was:         00:00:07.25
